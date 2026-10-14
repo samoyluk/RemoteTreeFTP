@@ -54,5 +54,22 @@
     {
         "caption": "RemoteTreeFTP: Language / Язык",
         "command": "remote_tree_ftp_language"
+    },
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_action",
+            "label": "RemoteTreeFTP: Обновить дерево",
+            "params": {
+                "action": "refresh"
+            }
+        }
+    },
+    {
+        "caption": "RemoteTreeFTP: File Actions / Действия с файлом",
+        "command": "remote_tree_ftp_action",
+        "args": {
+            "action": "menu"
+        }
     }
 ]

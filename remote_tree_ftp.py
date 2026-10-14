@@ -915,7 +915,7 @@ class RemoteTreeFtpActionCommand(sublime_plugin.WindowCommand):
         if action == 'permissions':
             session.edit_permissions(path)
         elif action == 'menu':
-            session.context_menu(path)
+            session.context_menu(path or session.active_path or session.root)
         elif action == 'browse':
             session.browse(path)
         elif action == 'open':

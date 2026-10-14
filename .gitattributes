@@ -1,0 +1,8 @@
+* text=auto
+.github export-ignore
+tests export-ignore
+tools export-ignore
+CONTRIBUTING.md export-ignore
+PUBLISHING.md export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore

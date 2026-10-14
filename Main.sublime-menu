@@ -1,0 +1,110 @@
+[
+    {
+        "id": "file",
+        "children": [
+            {
+                "caption": "-"
+            },
+            {
+                "caption": "RemoteTreeFTP",
+                "id": "remote_tree_ftp_menu",
+                "children": [
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_connect",
+                            "label": "Подключиться…",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_profile",
+                            "label": "Добавить сервер…",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_profile",
+                            "label": "Изменить сервер…",
+                            "params": {
+                                "edit": true
+                            }
+                        }
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_connect",
+                            "label": "Подключиться с другим паролем…",
+                            "params": {
+                                "prompt_password": true
+                            }
+                        }
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_settings",
+                            "label": "Настройки (файл)…",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "caption": "Language / Язык",
+                        "children": [
+                            {
+                                "caption": "Русский",
+                                "command": "remote_tree_ftp_language",
+                                "args": {
+                                    "language": "ru"
+                                }
+                            },
+                            {
+                                "caption": "English",
+                                "command": "remote_tree_ftp_language",
+                                "args": {
+                                    "language": "en"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "-"
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_action",
+                            "label": "Обновить дерево",
+                            "params": {
+                                "action": "refresh"
+                            }
+                        }
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_upload",
+                            "label": "Отправить текущий файл",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "command": "remote_tree_ftp_menu",
+                        "args": {
+                            "target": "remote_tree_ftp_action",
+                            "label": "Отключиться",
+                            "params": {
+                                "action": "disconnect"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_connect",
+            "label": "RemoteTreeFTP: Подключиться…",
+            "params": {}
+        }
+    },
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_settings",
+            "label": "RemoteTreeFTP: Настройки (файл)…",
+            "params": {}
+        }
+    },
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_upload",
+            "label": "RemoteTreeFTP: Отправить текущий файл",
+            "params": {}
+        }
+    },
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_action",
+            "label": "RemoteTreeFTP: Отключиться",
+            "params": {
+                "action": "disconnect"
+            }
+        }
+    },
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_profile",
+            "label": "RemoteTreeFTP: Добавить сервер…",
+            "params": {}
+        }
+    },
+    {
+        "command": "remote_tree_ftp_menu",
+        "args": {
+            "target": "remote_tree_ftp_profile",
+            "label": "RemoteTreeFTP: Изменить сервер…",
+            "params": {
+                "edit": true
+            }
+        }
+    },
+    {
+        "caption": "RemoteTreeFTP: Language / Язык",
+        "command": "remote_tree_ftp_language"
+    }
+]

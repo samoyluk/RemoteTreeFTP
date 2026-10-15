@@ -802,7 +802,7 @@ class RemoteTreeFtpConnectCommand(sublime_plugin.WindowCommand):
                         if selected == 0:
                             def save():
                                 try:
-                                    from .keychain import access
+                                    from .lib.keychain import access
                                     access(profile, password)
                                 except Exception:
                                     sublime.set_timeout(lambda: sublime.error_message(
@@ -823,7 +823,7 @@ class RemoteTreeFtpConnectCommand(sublime_plugin.WindowCommand):
                 return
             def lookup():
                 try:
-                    from .keychain import access
+                    from .lib.keychain import access
                     password = access(profile)
                 except Exception:
                     password = None

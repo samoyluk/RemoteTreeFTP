@@ -106,5 +106,27 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "RemoteTreeFTP",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/RemoteTreeFTP/RemoteTreeFTP.sublime-settings"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

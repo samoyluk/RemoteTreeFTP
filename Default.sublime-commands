@@ -71,5 +71,12 @@
         "args": {
             "action": "menu"
         }
+    },
+    {
+        "caption": "Preferences: RemoteTreeFTP Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/RemoteTreeFTP/RemoteTreeFTP.sublime-settings"
+        }
     }
 ]

@@ -16,7 +16,7 @@ assert state['profiles'][0]['passive'] is False and state['profiles'][0]['upload
 before=list(state['profiles']);cmd.run();w.input('cancelled');assert state['profiles']==before
 for key in state['profiles'][0]:assert key not in ('password',)
 # The keychain lookup must not depend on profile name or directory.
-spec=importlib.util.spec_from_file_location('kc','keychain.py');kc=importlib.util.module_from_spec(spec);spec.loader.exec_module(kc)
+spec=importlib.util.spec_from_file_location('kc','lib/keychain.py');kc=importlib.util.module_from_spec(spec);spec.loader.exec_module(kc)
 p={'host':'HOST','username':'u'};assert kc.account(p)==kc.account(dict(p,name='renamed',remote_path='/other'))
 assert kc.account(p)!=kc.account(dict(p,username='other'))
 print('PASS: add/edit profiles, preserve advanced fields, cancel without save, no password settings, keychain account isolation')

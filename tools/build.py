@@ -5,7 +5,7 @@ import ast
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = [".python-version", "remote_tree_ftp.py", "keychain.py", "Main.sublime-menu",
+FILES = [".python-version", "remote_tree_ftp.py", "lib/__init__.py", "lib/keychain.py", "Main.sublime-menu",
          "Default.sublime-commands", "RemoteTreeFTP.sublime-settings", "README.md",
          "README.ru.md", "LICENSE", "CHANGELOG.md", "VERSION"]
 for name in FILES:
